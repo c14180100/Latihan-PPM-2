@@ -25,4 +25,7 @@ export class AppComponent  {
   }
 }
 
+nama:String;
+penjelasan:String;
+
 

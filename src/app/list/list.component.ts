@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route : ActivatedRoute) { }
 
+  idpass = '';
   ngOnInit() {
+    let id = this.route.snapshot.paramMap.get('id');
+    this.idpass = id;
   }
 
 }
