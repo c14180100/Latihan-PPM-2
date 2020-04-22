@@ -13,9 +13,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const ROUTES: Routes = [
-  {path: 'input/:id', component: InputComponent},
-  {path: 'list/:id', component: ListComponent},
-  {path: 'edit/:id', component: EditComponent}
+  {path: 'input/:id:p', component: InputComponent},
+  {path: 'list/:id:p', component: ListComponent},
+  {path: 'edit/:id:p', component: EditComponent}
 ]
 
 @NgModule({

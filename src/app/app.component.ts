@@ -8,24 +8,27 @@ import { Router } from '@angular/router';
   styleUrls: [ './app.component.css' ]
 })
 
+
+
 export class AppComponent  {
   name = 'Angular';
   constructor (private router: Router){}
+  nama:String;
+  penjelasan:String;
 
   input(){
-    this.router.navigate(['/input']);
+    this.router.navigate(['/input',this.nama, this.penjelasan]);
   }
 
   list() {
-    this.router.navigate(['/list']);
+    this.router.navigate(['/list',this.nama, this.penjelasan]);
   }
 
   edit() {
-    this.router.navigate(['/edit']);
+    this.router.navigate(['/edit',this.nama, this.penjelasan]);
   }
 }
 
-nama:String;
-penjelasan:String;
+
 
 
